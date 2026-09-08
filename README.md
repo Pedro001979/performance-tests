@@ -1,60 +1,97 @@
-# Getting started with your app
+# Performance & Backend Engineering — EBAC Demo Store
 
-## Available Scripts
+![NestJS](https://img.shields.io/badge/NestJS-E0234E?logo=nestjs&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5%2B-3178C6?logo=typescript&logoColor=white)
+![Prisma](https://img.shields.io/badge/Prisma-ORM-2D3748?logo=prisma&logoColor=white)
+![GraphQL](https://img.shields.io/badge/GraphQL-API-E10098?logo=graphql&logoColor=white)
+![Jest](https://img.shields.io/badge/Jest-Testing-C21325?logo=jest&logoColor=white)
 
-In the project directory you can run:
+## Sobre o projeto
 
-### `npm start`
+Backend de referência baseado em **NestJS**, desenvolvido para explorar uma aplicação estruturada com API GraphQL, autenticação, persistência com Prisma e PostgreSQL, documentação e testes automatizados.
 
-Runs the app in the development mode.
-By default, it is accessible at http://localhost:3000
+O projeto também serve como base para práticas de **qualidade e testes de performance**, conectando desenvolvimento de APIs com validação automatizada e preparação de ambientes reproduzíveis.
 
-### `npm test`
+## Stack técnica
 
-Launches the test runner.
+- **NestJS** — arquitetura modular para aplicações Node.js
+- **TypeScript** — desenvolvimento tipado
+- **GraphQL / Apollo Server** — camada de API
+- **Prisma ORM** — acesso e migrações de banco
+- **PostgreSQL** — persistência de dados
+- **JWT / Passport / bcrypt** — autenticação e segurança
+- **Swagger** — documentação de API
+- **Jest / Supertest** — testes automatizados
+- **Docker** — infraestrutura local do banco
 
-### `npm run build`
+## Práticas demonstradas
 
-Builds the app for production to the `dist` folder.
+- Estruturação de backend modular
+- Autenticação baseada em JWT
+- Validação e transformação de dados
+- Persistência relacional com Prisma
+- Migrations e seed de banco
+- Testes automatizados de backend
+- Execução de ambiente de banco via Docker
+- Integração entre API, banco e camada de testes
 
-The build is minified and the filenames include the hashes.
-Your app is ready to be deployed!
+## Scripts principais
 
-## Development
+```bash
+npm install
 
-Make sure you have Node.js 14, npm, and Docker installed.
+# Desenvolvimento
+npm run start:watch
 
-- Instal Yarn
-```
-npm install -g yarn
-```
+# Build
+npm run build
 
-- Install dependencies
+# Testes
+npm test
 
-```
-yarn install
-```
-
-- Generate Prisma client
-
-```
+# Gerar Prisma Client
 npm run prisma:generate
-```
 
-- Start database in Docker
-
-```
+# Subir PostgreSQL via Docker
 npm run docker:db
-```
 
-- Initiate the database
-
-```
+# Inicializar banco e dados
 npm run db:init
 ```
 
-- Start the server
+> Antes de executar o projeto, configure as variáveis de ambiente necessárias para a conexão com o PostgreSQL e demais serviços utilizados pela aplicação.
 
+## Estrutura conceitual
+
+```text
+Client / Tests
+      │
+      ▼
+ GraphQL API
+      │
+      ▼
+   NestJS
+      │
+      ├── Authentication
+      ├── Validation
+      ├── Business Logic
+      └── Prisma ORM
+              │
+              ▼
+          PostgreSQL
 ```
-yarn start
-```
+
+## Objetivo profissional
+
+Este projeto representa a interseção entre **desenvolvimento backend e engenharia de qualidade**, demonstrando conhecimento sobre APIs, persistência, autenticação e testes — fundamentos importantes para construção de pipelines de qualidade mais completos.
+
+## Autor
+
+**Pedro Ricardo**  
+QA Automation | JavaScript | API Testing | Cypress | Appium | Performance Testing
+
+[![GitHub](https://img.shields.io/badge/GitHub-Pedro001979-181717?logo=github)](https://github.com/Pedro001979)
+
+---
+
+Licença: ISC
