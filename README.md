@@ -1,96 +1,60 @@
-# Performance & Backend Engineering — EBAC Demo Store
+# Engenharia de Backend e Testes de Performance
 
 ![NestJS](https://img.shields.io/badge/NestJS-E0234E?logo=nestjs&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5%2B-3178C6?logo=typescript&logoColor=white)
 ![Prisma](https://img.shields.io/badge/Prisma-ORM-2D3748?logo=prisma&logoColor=white)
 ![GraphQL](https://img.shields.io/badge/GraphQL-API-E10098?logo=graphql&logoColor=white)
-![Jest](https://img.shields.io/badge/Jest-Testing-C21325?logo=jest&logoColor=white)
+![Jest](https://img.shields.io/badge/Jest-Testes-C21325?logo=jest&logoColor=white)
 
 ## Sobre o projeto
 
-Backend de referência baseado em **NestJS**, desenvolvido para explorar uma aplicação estruturada com API GraphQL, autenticação, persistência com Prisma e PostgreSQL, documentação e testes automatizados.
+Backend de referência baseado em **NestJS**, utilizado para explorar API GraphQL, autenticação, persistência com Prisma/PostgreSQL e testes automatizados.
 
-O projeto também serve como base para práticas de **qualidade e testes de performance**, conectando desenvolvimento de APIs com validação automatizada e preparação de ambientes reproduzíveis.
+O projeto também representa uma parte importante da minha formação em **Quality Engineering**, conectando conhecimento de desenvolvimento backend com práticas de validação, testes e análise de desempenho.
 
 ## Stack técnica
 
-- **NestJS** — arquitetura modular para aplicações Node.js
-- **TypeScript** — desenvolvimento tipado
-- **GraphQL / Apollo Server** — camada de API
-- **Prisma ORM** — acesso e migrações de banco
-- **PostgreSQL** — persistência de dados
-- **JWT / Passport / bcrypt** — autenticação e segurança
-- **Swagger** — documentação de API
-- **Jest / Supertest** — testes automatizados
-- **Docker** — infraestrutura local do banco
+- NestJS e Node.js
+- TypeScript
+- GraphQL / Apollo Server
+- Prisma ORM
+- PostgreSQL
+- JWT / Passport / bcrypt
+- Swagger
+- Jest / Supertest
+- Docker
 
 ## Práticas demonstradas
 
-- Estruturação de backend modular
+- Desenvolvimento e validação de APIs
 - Autenticação baseada em JWT
 - Validação e transformação de dados
-- Persistência relacional com Prisma
+- Persistência relacional
 - Migrations e seed de banco
 - Testes automatizados de backend
-- Execução de ambiente de banco via Docker
-- Integração entre API, banco e camada de testes
+- Ambientes reproduzíveis com Docker
+- Integração entre aplicação, banco e testes
 
-## Scripts principais
+## Execução
 
 ```bash
 npm install
-
-# Desenvolvimento
 npm run start:watch
-
-# Build
-npm run build
-
-# Testes
 npm test
-
-# Gerar Prisma Client
-npm run prisma:generate
-
-# Subir PostgreSQL via Docker
-npm run docker:db
-
-# Inicializar banco e dados
-npm run db:init
 ```
 
-> Antes de executar o projeto, configure as variáveis de ambiente necessárias para a conexão com o PostgreSQL e demais serviços utilizados pela aplicação.
+Para preparar o banco, utilize os scripts Prisma/Docker definidos no `package.json` e configure as variáveis de ambiente necessárias.
 
-## Estrutura conceitual
+## Visão de qualidade
 
-```text
-Client / Tests
-      │
-      ▼
- GraphQL API
-      │
-      ▼
-   NestJS
-      │
-      ├── Authentication
-      ├── Validation
-      ├── Business Logic
-      └── Prisma ORM
-              │
-              ▼
-          PostgreSQL
-```
-
-## Objetivo profissional
-
-Este projeto representa a interseção entre **desenvolvimento backend e engenharia de qualidade**, demonstrando conhecimento sobre APIs, persistência, autenticação e testes — fundamentos importantes para construção de pipelines de qualidade mais completos.
+Este projeto demonstra que minha atuação em QA não se limita à interface. Entender **API, autenticação, banco de dados e arquitetura backend** permite criar estratégias de teste mais completas e identificar riscos em diferentes camadas da aplicação.
 
 ## Autor
 
 **Pedro Ricardo**  
-QA Automation | JavaScript | API Testing | Cypress | Appium | Performance Testing
+QA Automation | API | Performance | JavaScript | Backend
 
-[![GitHub](https://img.shields.io/badge/GitHub-Pedro001979-181717?logo=github)](https://github.com/Pedro001979)
+[GitHub](https://github.com/Pedro001979) · [LinkedIn](https://www.linkedin.com/in/pedro-ricardo-6a3b76236/)
 
 ---
 
